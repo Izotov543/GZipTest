@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO.Compression;
+﻿using System.IO.Compression;
 
 namespace GZipTest.FileModifiers
 {
     /// <summary>
     /// Предназначен для создания конкретной сущности <seealso cref="T:GZipTest.FileModifiers.IFileModifier"/>.
     /// </summary>
-    internal static class ModifierFabric
+    internal static class ModifierFactory
     {
         internal static IFileModifier Create(CompressionMode command)
         {

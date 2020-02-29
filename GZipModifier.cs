@@ -48,7 +48,7 @@ namespace GZipTest
             this.fileToReadPath = fileToReadPath;
             this.fileToWritePath = fileToWritePath;
             args = new string[] { gZipStreamCommand.ToString(), fileToReadPath, fileToWritePath };
-            fileModifier = ModifierFabric.Create(gZipStreamCommand);
+            fileModifier = ModifierFactory.Create(gZipStreamCommand);
             readQueue = new LimitedSizeBlocksQueue(threadsNumber);
             writeBuffer = new ConcurrentDictionary<int, Block>();
             countdown = new CountdownEvent(threadsNumber + 1);

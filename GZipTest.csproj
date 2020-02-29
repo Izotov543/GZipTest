@@ -80,7 +80,7 @@
     <Compile Include="FileModifiers\Compressor.cs" />
     <Compile Include="FileModifiers\Decompressor.cs" />
     <Compile Include="FileModifiers\IFileModifiere.cs" />
-    <Compile Include="FileModifiers\ModifierFabric.cs" />
+    <Compile Include="FileModifiers\ModifierFactory.cs" />
     <Compile Include="Utils\ArgumentsCheker.cs" />
     <Compile Include="Queue\Block.cs" />
     <Compile Include="GZipModifier.cs" />
